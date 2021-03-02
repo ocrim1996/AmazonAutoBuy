@@ -146,6 +146,8 @@ Before running the code, you need to have the **ChromeDrive** tool, which is use
 
 Sometimes it is necessary (especially when the script is run on Raspberry) that the Amazon account to be used must have been created by the same device on which this script is run. This is to escape **Amazon's OTP** **verification**.
 
+**!!!Important!!!** Another step to do before running the script is to go to your amazon account and **set** a **default delivery address** and also a **default payment method** associated with your account. This will allow Amazon's "**Buy Now**" feature. If you are also checking products on Amazon stores in foreign countries, you must perform this procedure for each of these stores.
+
 ## **Telegram Notification Example**
 In this image you can see the notification that the Bot sends via Telegram when a product is available and ready to be purchased:
 <p align="center">
