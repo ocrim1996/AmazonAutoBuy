@@ -154,7 +154,7 @@ In this image you can see the notification that the Bot sends via Telegram when 
 
 ## **Library Needed**
 
-To run the code you need the following libraries:
+To run the code you need the following **libraries**:
 
 Library | Version
 ------------- | -------------
