@@ -164,5 +164,5 @@ Library | Version
 **[requests](https://pypi.org/project/requests/)** | >= 2.25.1
 **[twilio](https://pypi.org/project/twilio/)** | >= 6.53.0
 
-The code has been tested with Raspberry with NOOBS and MacOS Catalina.
+The code has been tested with **Raspberry with NOOBS** and **MacOS Catalina**.
 
