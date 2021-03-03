@@ -199,7 +199,6 @@ if __name__ == '__main__':
                     # It takes the price of the product from html page and then does the conversion.
                     price = soup.select('#priceblock_ourprice')[0].get_text().strip()
                     price = price_conversion(price)
-                    print(price)
 
                     # It checks that the price of the product is lower than the maximum established.
                     if price <= MAX_PRICE[i]:
