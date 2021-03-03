@@ -15,7 +15,7 @@ urls = ["https://www.amazon.it/dp/B08HN4DSTC", "https://www.amazon.fr/dp/B08HN4D
 MAX_PRICE = [800, 900, 700, 1000]
 
 # It is used later to check that availability is on Amazon and not at other sellers.
-false_availability_list = ["Disponibile presso questi venditori.", "Voir les offres de ces vendeurs.", "Disponible a través de estos vendedores.", "Erhältlich bei diesen Anbietern."]
+false_availability_list = ["Disponibile presso questi venditori.", "Voir les offres de ces vendeurs.", "Disponible a través de estos vendedores.", "Erhältlich bei diesen Anbietern.", "Available from these sellers."]
 
 # Header is useful to spoof your request so that it looks like it comes from a legitimate browser.
 headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
