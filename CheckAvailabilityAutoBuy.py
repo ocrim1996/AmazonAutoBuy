@@ -36,10 +36,12 @@ options.page_load_strategy = 'eager'
 def price_conversion(product_price):
     product_price = product_price.replace(" ", "")
     product_price = product_price.replace(".", "")
+    product_price = product_price.replace(",", "")
     symbols_to_replace = "€$£"
     for symbol in symbols_to_replace:
         product_price = product_price.replace(symbol, "")
-    product_price = product_price.replace(",", ".")
+    product_price = product_price.replace(u'\xa0', u'')
+    product_price = product_price[:-2] + '.' + product_price[-2:]
     product_price = float(product_price)
     return product_price
 
