@@ -192,8 +192,15 @@ if __name__ == '__main__':
                                 stock = "Request Error"
                                 availability_text = "foo"
 
+                # checking if the price is present in the html page.
+                try:
+                    price = soup.select('#priceblock_ourprice')[0].get_text().strip()
+                    is_there_price = True
+                except:
+                    is_there_price = False
+
                 # If the product is available and the availability is on Amazon and not from other sellers.
-                if "Available" in stock and availability_text not in false_availability_list:
+                if "Available" in stock and availability_text not in false_availability_list and is_there_price is True:
 
                     # Get correct product country.
                     country = get_country(urls[i])
